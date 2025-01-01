@@ -6,4 +6,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface OneTimePasswordRepository extends CrudRepository<OneTimePassword, Long> {
+    OneTimePassword findByOneTimePasswordCode(String oneTimePasswordCode);
 }

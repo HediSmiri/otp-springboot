@@ -17,8 +17,6 @@ public class OneTimePasswordService {
 
     private final OneTimePasswordRepository oneTimePasswordRepository;
 
-    private final OneTimePasswordHelpService oneTimePasswordHelpService;
-
     public OneTimePassword returnOneTimePassword() {
         OneTimePassword oneTimePassword = new OneTimePassword();
         Supplier<String> otpSupplier = OneTimePasswordHelpService.createRandomOneTimePassword();
