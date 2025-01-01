@@ -19,7 +19,7 @@ public class OneTimePassword {
     @NonNull
     private Long id;
     @NonNull
-    private Integer oneTimePasswordCode;
+    private String oneTimePasswordCode;
     @NonNull
     private Date expires;
 }
